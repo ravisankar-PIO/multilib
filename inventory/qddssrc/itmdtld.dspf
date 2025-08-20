@@ -1,0 +1,45 @@
+     A*----------------------------------------------------------
+     A*               ITEM MASTER FILE SCREEN DESIGN
+     A*
+     A*   File......: ITMDTLD
+     A*   Purpose...: Detail Screen for Maintaining ITMMASTF file
+     A*   Notes.....: This detail record will handle all the
+     A*               modes such as add, update, edit, display & delete
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+     A                                      DSPSIZ(24 80 *DS3)
+     A                                      INDARA
+     A                                      CF05(05 'Refresh')
+     A                                      CF03(03 'Exit')
+     A                                      CF12(12 'Cancel')
+     A                                      PAGEUP(25)
+     A                                      PAGEDOWN(26)
+     A          R ITDETAIL
+     A                                      OVERLAY
+     A                                  1  2USER
+     A            D_PGMNAM      10A  O  2  2
+     A                                  1 34'Programmers.io'
+     A                                      COLOR(BLU)
+     A            D_MODE         7A  O  2 18
+     A                                  2 27'screen for Item Master Maintenance'
+     A                                  1 73DATE
+     A                                      EDTCDE(Y)
+     A                                  2 73TIME
+     A                                  5  3'Item Number......:'
+     A            D_ITNUM        5S 0O  5 22
+     A                                  7  3'Item Description.:'
+     A            D_ITDESC      30A  B  7 22
+     A  70                                  DSPATR(PR)
+     A  71                                  DSPATR(RI)
+     A                                  9  3'Item Quantity....:'
+     A            D_ITQTY        5S 0B  9 22
+     A  70                                  DSPATR(PR)
+     A  72                                  DSPATR(RI)
+     A                                 11  3'Item Price.......:'
+     A            D_ITPRICE      5S 0B 11 22
+     A  70                                  DSPATR(PR)
+     A  73                                  DSPATR(RI)
+     A            D_ERROR       70A  O 20  3COLOR(WHT)
+     A  74                                  DSPATR(BL)

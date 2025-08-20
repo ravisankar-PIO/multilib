@@ -1,0 +1,23 @@
+     A*----------------------------------------------------------
+     A*               ITEM MASTER FILE
+     A*
+     A*   Name......: ITMMASTF
+     A*   Purpose...: Item Master Table
+     A*   Notes.....: The Item Number is unique and will be auto incremented (in program)
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+     A                                      UNIQUE
+     A          R ITMMASTR
+     A            ITNUM          5S 0
+     A            ITDESC        30A
+     A            ITQTY          5S 0
+     A            ITPRICE        5S 0
+     A            CRUSR         10A
+     A            CRDATE          Z
+     A            CRPGM         10A
+     A            UPUSR         10A
+     A            UPDAT           Z
+     A            UPPGM         10A
+     A          K ITNUM
