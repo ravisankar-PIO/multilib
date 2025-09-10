@@ -1,6 +1,7 @@
 -- --------------------------------------------------------------------------//
 -- Created By.......: Programmers.io @ 2023                                  //
--- Create Date......: 2023/09/05                                             //
+ -- Create Date......: 2023/09/05                                             //
+ -- MODIFED BY RAVI..: 2023/09/05                                             //
 -- Developer........: Ravisankar Pandian                                     //
 -- Description......: Update ITMMASTF table                                  //
 -- -----------------------------------------------------------------------------
@@ -25,7 +26,7 @@ Create Or Replace Procedure Itmdtl
     In  User_Nam    char(10),
     In  Prog_Nam    char(10),
     In  Mode        numeric(1),
-    Out Opr_Flag    char(1)  
+    Out Opr_Flag    char(1)
 
 )
 
@@ -58,33 +59,33 @@ Begin
     Declare w_Error     varchar(1000) default ' ';
     Declare success condition for sqlstate '38001';
 
-    Declare Exit Handler for SqlException 
+    Declare Exit Handler for SqlException
     Begin
         case Mode
             when 1 then
             set w_Error = 'Error During Add';
-    
+
             When 3 then
             set w_Error = 'Error During Copy';
-            
+
             When 4 then
             set w_Error = 'Error During Delete';
 
             else
             set w_error = 'Unknown';
-    
+
         end case;
         Insert into SQLERRLOG Values(Prog_Nam, User_Nam, w_sql, current_timestamp);
     End;
 
 
-    Declare Continue Handler for success 
+    Declare Continue Handler for success
     Begin
         Insert into SQLERRLOG Values(Prog_Nam, User_Nam, w_sql, current_timestamp);
     End;
     -------------------------------------------------------------------
     -- *MAIN LOGIC OF PROGRAM                                          *
-    ------------------------------------------------------------------- 
+    -------------------------------------------------------------------
 
     Case Mode
         When 1 then
@@ -93,12 +94,12 @@ Begin
                         ||   Item_Des || ''' , '
                         ||          trim(char(Item_Qty))      || ', '
                         ||          trim(char(Item_prc))      || ', '''
-                        ||   User_Nam || ''' , '  
+                        ||   User_Nam || ''' , '
                         ||          'current_Timestamp'      || ', '''
-                        ||   Prog_Nam || ''' , ''' 
-                        ||   User_Nam || ''' , '  
+                        ||   Prog_Nam || ''' , '''
+                        ||   User_Nam || ''' , '
                         ||          'current_Timestamp'      || ', '''
-                        ||   Prog_Nam || ''' )' ; 
+                        ||   Prog_Nam || ''' )' ;
             signal sqlstate '38001';
 
 
@@ -108,33 +109,33 @@ Begin
                         ||   Item_Des || ''' , '
                         ||          trim(char(Item_Qty))      || ', '
                         ||          trim(char(Item_prc))      || ', '''
-                        ||   User_Nam || ''' , '  
+                        ||   User_Nam || ''' , '
                         ||          'current_Timestamp'      || ', '''
-                        ||   Prog_Nam || ''' , ''' 
-                        ||   User_Nam || ''' , '  
+                        ||   Prog_Nam || ''' , '''
+                        ||   User_Nam || ''' , '
                         ||          'current_Timestamp'      || ', '''
-                        ||   Prog_Nam || ''' )' ; 
-            signal sqlstate '38001';           
+                        ||   Prog_Nam || ''' )' ;
+            signal sqlstate '38001';
 
-        When 2 then 
+        When 2 then
             set w_sql =       'Update ITMMASTF Set'
-                        || 'ITDESC = ''' || Item_Des         || ''' , ' 
+                        || 'ITDESC = ''' || Item_Des         || ''' , '
                         || 'ITQTY = '       ||          trim(char(Item_Qty))      || ', '
                         || 'ITPRICE = '     ||          trim(char(Item_prc))      || ', '
-                        || 'UPUSR = '''  || User_Nam         || ''' , '  
+                        || 'UPUSR = '''  || User_Nam         || ''' , '
                         || 'UPDAT = '       ||          'current_Timestamp'      || ', '
                         || 'UPPGM = '''  || Prog_Nam         || ''' '
                         || 'Where ITNUM = ' ||          trim(char(Item_Num))     || ')';
             signal sqlstate '38001';
-    
+
         When 4 then
-            set w_sql =       'Delete from ITMMASTF ' 
+            set w_sql =       'Delete from ITMMASTF '
                         || 'Where ITNUM = ' ||          trim(char(Item_Num))     || ')';
             signal sqlstate '38001';
-        else 
-            set Opr_Flag = '0'; 
+        else
+            set Opr_Flag = '0';
     End Case;
 
 
-   
-End; 
+
+End;
