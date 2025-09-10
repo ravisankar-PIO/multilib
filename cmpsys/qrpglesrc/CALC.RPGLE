@@ -7,10 +7,7 @@ dcl-s c  packed(2) Inz;
 eval a = 1;
 eval b = 2;
 c = a + b;
-//added a new line via VS Code object browser
 
+// added a comment
 dsply b;
-// modified comment from TN5250
-// added a new comment from FIx103
-// added a new comment from FIx103
 *inlr = *on;
