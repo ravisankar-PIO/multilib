@@ -1,9 +1,9 @@
 **free
 dcl-s a  packed(2) Inz;
-dcl-s b  packed(2) Inz;
-dcl-s c  packed(2) Inz;
+// dcl-s b  packed(2) Inz;
+// dcl-s c  packed(2) Inz;
 
-// tested
+// tested ravi
 eval a = 1;
 eval b = 2;
 c = a + b;
