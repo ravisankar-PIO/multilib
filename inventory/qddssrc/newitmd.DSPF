@@ -1,7 +1,7 @@
      A*----------------------------------------------------------
      A*              KITEM MASTER FILE SCREEN DESIGN
      A*
-     A*   File......: ITMDTLD MODIFIED BY AVADHOOT
+     A*   File......: ITMDTLD
      A*   Purpose...: Detail Screen for Maintaining ITMMASTF file
      A*   Notes.....: This detail record will handle all the
      A*               modes such as add, update, edit, display & delete
