@@ -1,7 +1,7 @@
 **free
 // -------------------------------------------------------------------------------------------------
 // Program Name : ITMMASTR
-// Description  : Program to Maintain the Item Master file records.
+// Description  : A program to Maintain the Item Master file records.
 // Parameters   : None.
 // Written By   : Ravisankar Pandian
 // Company.     : Programmers.IO
