@@ -1,5 +1,4 @@
 /*%%TEXT Create new order with parameter */
-/*%%OBJECT-TYPE *PGM                        */
 PGM        PARM(&CUID)
              INCLUDE    SRCSTMF('included.clle') 
              DLTF       FILE(QTEMP/DETORD)
