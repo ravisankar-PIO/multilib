@@ -14,6 +14,7 @@
       /include 'qrpgleref/constants.rpgleinc'
 
 
+      // New comment
 
       //---------------------------------------------------------------*
 
