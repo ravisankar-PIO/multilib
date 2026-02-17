@@ -1,0 +1,171 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to KHUSHI.
+
+>> executing command: CRTBNDRPG srcstmf('/home/KHUSHI/multilib/accounts/qrpglesrc/test1pgm1.rpgle') PGM(KHUSHI/TEST1PGM1) TGTCCSID(*JOB) DBGVIEW(*ALL) DBGENCKEY(*NONE) USRPRF(*USER) OPTION(*EVENTF) TEXT('') TGTRLS() INCDIR(*NONE)
+>> liblist: QSYS QSYS2 QHLPSYS QUSRSYS QSHELL KHUSHI QGPL QTEMP PIODEVOPS
+>> executing time: 2026-02-17-10.27.56.00
+
+RNS9304: Program TEST1PGM1 placed in library KHUSHI. 00 highest severity. Created on 02/17/26 at 10:27:56.
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      1
+  Command  . . . . . . . . . . . . :   CRTBNDRPG
+    Issued by  . . . . . . . . . . :     KHUSHI
+  Program  . . . . . . . . . . . . :   TEST1PGM1
+    Library  . . . . . . . . . . . :     KHUSHI
+  Text 'description' . . . . . . . :
+  Source stream file   . . . . . . :   /home/KHUSHI/multilib/accounts/qrpglesrc/test1pgm1
+                                       .rpgle
+    CCSID  . . . . . . . . . . . . :     1208
+  Target CCSID . . . . . . . . . . :   *JOB (37)
+  Text 'description' . . . . . . . :
+  Last Change  . . . . . . . . . . :   02/17/26  09:50:51
+  Generation severity level  . . . :   10
+  Default activation group . . . . :   *YES
+  Compiler options . . . . . . . . :   *XREF      *GEN       *NOSECLVL  *SHOWCPY
+                                       *EXPDDS    *EXT       *NOSHOWSKP *NOSRCSTMT
+                                       *DEBUGIO   *UNREF     *EVENTF
+  Debugging views  . . . . . . . . :   *ALL
+  Debug encryption key . . . . . . :   *NONE
+  Output . . . . . . . . . . . . . :   *PRINT
+  Optimization level . . . . . . . :   *NONE
+  Source listing indentation . . . :   *NONE
+  Type conversion options  . . . . :   *NONE
+  Sort sequence  . . . . . . . . . :   *HEX
+  Language identifier  . . . . . . :   *JOBRUN
+  Replace program  . . . . . . . . :   *YES
+  User profile . . . . . . . . . . :   *USER
+  Authority  . . . . . . . . . . . :   *LIBCRTAUT
+  Truncate numeric . . . . . . . . :   *YES
+  Fix numeric  . . . . . . . . . . :   *NONE
+  Target release . . . . . . . . . :   *CURRENT
+  Allow null values  . . . . . . . :   *NO
+  Define condition names . . . . . :   *NONE
+  Enable performance collection  . :   *PEP
+  Profiling data . . . . . . . . . :   *NOCOL
+  Licensed Internal Code options . :
+  Generate program interface . . . :   *NO
+  Include directory  . . . . . . . :
+  Preprocessor options . . . . . . :   *NONE
+  Require prototype for export . . :   *NO
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      2
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+                          S o u r c e   L i s t i n g
+     1 **free                                                                                                               000001
+     2                                                                                                                      000002
+     3 ctl-opt dftactgrp(*no) bnddir('TEST1BND1');                                                                          000003
+     4                                                                                                                      000004
+        *--------------------------------------------------------------------*
+        * Compiler Options in Effect:                                        *
+        *--------------------------------------------------------------------*
+        *  Text 'description' . . . . . . . :                                *
+        *                                                                    *
+        *  Generation severity level  . . . :   10                           *
+        *  Default activation group . . . . :   *NO                          *
+        *  Compiler options . . . . . . . . :   *XREF      *GEN              *
+        *                                       *NOSECLVL  *SHOWCPY          *
+        *                                       *EXPDDS    *EXT              *
+        *                                       *NOSHOWSKP *NOSRCSTMT        *
+        *                                       *DEBUGIO   *UNREF            *
+        *                                       *EVENTF                      *
+        *  Optimization level . . . . . . . :   *NONE                        *
+        *  Source listing indentation . . . :   *NONE                        *
+        *  Type conversion options  . . . . :   *NONE                        *
+        *  Sort sequence  . . . . . . . . . :   *HEX                         *
+        *  Language identifier  . . . . . . :   *JOBRUN                      *
+        *  User profile . . . . . . . . . . :   *USER                        *
+        *  Authority  . . . . . . . . . . . :   *LIBCRTAUT                   *
+        *  Truncate numeric . . . . . . . . :   *YES                         *
+        *  Fix numeric  . . . . . . . . . . :   *NONE                        *
+        *  Allow null values  . . . . . . . :   *NO                          *
+        *  Storage model . . .  . . . . . . :   *SNGLVL                      *
+        *  Binding directory from Command . :   *NONE                        *
+        *  Binding directory from Source  . :   TEST1BND1                    *
+        *    Library  . . . . . . . . . . . :     *LIBL                      *
+        *  Activation group . . . . . . . . :   *STGMDL                      *
+        *  Enable performance collection  . :   *PEP                         *
+        *  Profiling data . . . . . . . . . :   *NOCOL                       *
+        *  Generate program interface . . . :   *NO                          *
+        *  Require prototype for export . . :   *NO                          *
+        *--------------------------------------------------------------------*
+     5 dcl-pi TEST1PGM1;                                                                                                    000005
+     6   num1  zoned(2:0);                                                                                                  000006
+     7   num2  zoned(2:0);                                                                                                  000007
+     8 end-pi;                                                                                                              000008
+     9                                                                                                                      000009
+    10 dcl-pr addnumbers zoned(3:0);                                                                                        000010
+    11   num1 zoned(2:0);                                                                                                   000011
+    12   num2 zoned(2:0);                                                                                                   000012
+    13 end-pr;                                                                                                              000013
+    14                                                                                                                      000014
+    15 dcl-s result zoned(3:0);                                                                                             000015
+    16                                                                                                                      000016
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      3
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+    17 result = addnumbers(num1 : num2);                                                                                    000017
+    18                                                                                                                      000018
+    19 dsply ('sum is ' + %char(result));                                                                                   000019
+    20                                                                                                                      000020
+    21 *inlr = *on;                                                                                                         000021
+       * * * * *   E N D   O F   S O U R C E   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      4
+          A d d i t i o n a l   D i a g n o s t i c   M e s s a g e s
+ Msg id  Sv Number Seq     Message text
+ * * * * *   E N D   O F   A D D I T I O N A L   D I A G N O S T I C   M E S S A G E S   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      5
+                          C r o s s   R e f e r e n c e
+      File and Record References:
+         File              Device             References (D=Defined)
+           Record
+         No references in the source.
+      Global Field References:
+         Field             Attributes         References (D=Defined M=Modified)
+         *INLR             N(1)                   21M
+         ADDNUMBERS        S(3,0)                 10D     17
+                           PROTOTYPE
+         NUM1              S(2,0)                  6D     17
+                           BASED(_QRNL_PRM+)
+         NUM2              S(2,0)                  7D     17
+                           BASED(_QRNL_PRM+)
+         RESULT            S(3,0)                 15D     17M     19
+      Indicator References:
+         Indicator                            References (D=Defined M=Modified)
+         LR                                       21M
+       * * * * *   E N D   O F   C R O S S   R E F E R E N C E   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      6
+                      E x t e r n a l   R e f e r e n c e s
+      Statically bound procedures:
+         Procedure                            References
+         TEST1PGM1                                 5
+         ADDNUMBERS                               10      17
+      Imported fields:
+         Field             Attributes         Defined
+         No references in the source.
+      Exported fields:
+         Field             Attributes         Defined
+         No references in the source.
+   * * * * *   E N D   O F   E X T E R N A L   R E F E R E N C E S   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      7
+                          M e s s a g e   S u m m a r y
+ Msg id  Sv Number Message text
+*RNF7031 00      1 The name or indicator is not referenced.
+       * * * * *   E N D   O F   M E S S A G E   S U M M A R Y   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/TEST1PGM1         P1289XPV   02/17/26 10:27:56        Page      8
+                            F i n a l   S u m m a r y
+  Message Totals:
+    Information  (00) . . . . . . . :        1
+    Warning      (10) . . . . . . . :        0
+    Error        (20) . . . . . . . :        0
+    Severe Error (30+)  . . . . . . :        0
+    ---------------------------------  -------
+    Total . . . . . . . . . . . . . :        1
+  Source Totals:
+    Records . . . . . . . . . . . . :       21
+    Specifications  . . . . . . . . :       13
+    Data records  . . . . . . . . . :        0
+    Comments  . . . . . . . . . . . :        7
+         * * * * *   E N D   O F   F I N A L   S U M M A R Y   * * * * *
+Program TEST1PGM1 placed in library KHUSHI. 00 highest severity. Created on 02/17/26 at 10:27:56.
+          * * * * *   E N D   O F   C O M P I L A T I O N   * * * * *
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+

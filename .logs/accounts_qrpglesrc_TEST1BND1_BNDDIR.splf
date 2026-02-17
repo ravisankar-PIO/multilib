@@ -1,0 +1,30 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to KHUSHI.
+
+>> executing command: DLTOBJ OBJ(KHUSHI/TEST1BND1) OBJTYPE(*BNDDIR)
+>> liblist: QSYS QSYS2 QHLPSYS QUSRSYS QSHELL KHUSHI QGPL QTEMP PIODEVOPS
+>> executing time: 2026-02-17-10.27.53.00
+
+CPF2105: Object TEST1BND1 in KHUSHI type *BNDDIR not found.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to KHUSHI.
+
+>> executing command: CRTBNDDIR BNDDIR(KHUSHI/TEST1BND1)
+>> liblist: QSYS QSYS2 QHLPSYS QUSRSYS QSHELL KHUSHI QGPL QTEMP PIODEVOPS
+>> executing time: 2026-02-17-10.27.54.00
+
+CPC5D02: Binding directory TEST1BND1 created in library KHUSHI.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to KHUSHI.
+
+>> executing command:  ADDBNDDIRE BNDDIR(KHUSHI/TEST1BND1) OBJ((*LIBL/TEST1MOD1 *MODULE) )
+>> liblist: QSYS QSYS2 QHLPSYS QUSRSYS QSHELL KHUSHI QGPL QTEMP PIODEVOPS
+>> executing time: 2026-02-17-10.27.55.00
+
+CPC5D05: 1 entries added, 0 entries not added to Binding directory TEST1BND1 in library KHUSHI.
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
