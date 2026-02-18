@@ -1,0 +1,409 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to KHUSHI.
+
+>> executing command: CRTSQLRPGI srcstmf('/home/KHUSHI/multilib/inventory/qrpglesrc/SECTION.SQLRPGLE') OBJ(KHUSHI/SECTION) COMMIT(*NONE) OBJTYPE(*PGM) OPTION(*EVENTF) OUTPUT(*PRINT) TEXT('') TGTRLS() DBGVIEW(*SOURCE) DBGENCKEY(*NONE) USRPRF(*USER) RPGPPOPT(*LVL2) COMPILEOPT('TGTCCSID(*JOB) OPTIMIZE() INCDIR(*NONE)')
+>> liblist: QSYS QSYS2 QHLPSYS QUSRSYS QSHELL KHUSHI QGPL QTEMP PIODEVOPS
+>> executing time: 2026-02-18-07.20.08.00
+
+RNS9304: Program SECTION placed in library KHUSHI. 00 highest severity. Created on 02/18/26 at 07:20:08.
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      1
+  Command  . . . . . . . . . . . . :   CRTBNDRPG
+    Issued by  . . . . . . . . . . :     KHUSHI
+  Program  . . . . . . . . . . . . :   SECTION
+    Library  . . . . . . . . . . . :     KHUSHI
+  Text 'description' . . . . . . . :
+  Source stream file   . . . . . . :   /home/KHUSHI/multilib/inventory/qrpglesrc/SECTION.
+                                       SQLRPGLE
+    CCSID  . . . . . . . . . . . . :     1208
+  Target CCSID . . . . . . . . . . :   *JOB (37)
+  Text 'description' . . . . . . . :
+  Last Change  . . . . . . . . . . :   02/18/26  07:19:16
+  Generation severity level  . . . :   10
+  Default activation group . . . . :   *YES
+  Compiler options . . . . . . . . :   *XREF      *GEN       *NOSECLVL  *SHOWCPY
+                                       *EXPDDS    *EXT       *NOSHOWSKP *NOSRCSTMT
+                                       *DEBUGIO   *UNREF     *EVENTF
+  Debugging views  . . . . . . . . :   *ALL
+  Debug encryption key . . . . . . :   *NONE
+  Output . . . . . . . . . . . . . :   *PRINT
+  Optimization level . . . . . . . :   *NONE
+  Source listing indentation . . . :   *NONE
+  Type conversion options  . . . . :   *NONE
+  Sort sequence  . . . . . . . . . :   *JOB
+  Language identifier  . . . . . . :   *JOB
+  Replace program  . . . . . . . . :   *YES
+  User profile . . . . . . . . . . :   *USER
+  Authority  . . . . . . . . . . . :   *LIBCRTAUT
+  Truncate numeric . . . . . . . . :   *YES
+  Fix numeric  . . . . . . . . . . :   *NONE
+  Target release . . . . . . . . . :   V7R5M0
+  Allow null values  . . . . . . . :   *NO
+  Define condition names . . . . . :   *NONE
+  Enable performance collection  . :   *PEP
+  Profiling data . . . . . . . . . :   *NOCOL
+  Licensed Internal Code options . :
+  Generate program interface . . . :   *NO
+  Include directory  . . . . . . . :
+  Preprocessor options . . . . . . :   *NORMVCOMMENT *EXPINCLUDE   *NOSEQSRC
+  Output source file . . . . . . . :   QSQLPRE
+    Library  . . . . . . . . . . . :     QTEMP
+  Output source member . . . . . . :   SECTION
+  MINIMUM OUTPUT LINE LENGTH . . . :   100
+  Require prototype for export . . :   *NO
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      2
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+                          S o u r c e   L i s t i n g
+     1 **free                                                                                                               000001
+     2      // commented out                                                                                                000002
+     3      // comment from tobi in inventory                                                                               000003
+     4       // comment from tobi in inventory                                                                              000004
+     5                                                                                                                      000005
+     6      *inlr = *on;                                                                                                    000006
+       * * * * *   E N D   O F   S O U R C E   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      3
+Line   <---------------------- Data Records -------------------------------------------------------------->      Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10      Date   Id  Number
+                       C o m p i l e   T i m e   D a t a
+    * * * * *   E N D   O F   C O M P I L E   T I M E   D A T A   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      4
+                          M e s s a g e   S u m m a r y
+ Msg id  Sv Number Message text
+       * * * * *   E N D   O F   M E S S A G E   S U M M A R Y   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      5
+                            F i n a l   S u m m a r y
+  Message Totals:
+    Information  (00) . . . . . . . :        0
+    Warning      (10) . . . . . . . :        0
+    Error        (20) . . . . . . . :        0
+    Severe Error (30+)  . . . . . . :        0
+    ---------------------------------  -------
+    Total . . . . . . . . . . . . . :        0
+  Source Totals:
+    Records . . . . . . . . . . . . :        6
+    Specifications  . . . . . . . . :        1
+    Data records  . . . . . . . . . :        0
+    Comments  . . . . . . . . . . . :        4
+         * * * * *   E N D   O F   F I N A L   S U M M A R Y   * * * * *
+Diagnostic check of source is complete. Highest severity is 00.
+          * * * * *   E N D   O F   C O M P I L A T I O N   * * * * *
+5770ST1 V7R5M0 220415            Create SQL ILE RPG Object         SECTION                     02/18/26 07:20:08          Page     1
+Source type...............RPG
+Object name...............KHUSHI/SECTION
+Source file...............QTEMP/QSQLPRE
+Member....................*OBJ
+To source file............QTEMP/QSQLTEMP1
+Options...................*LSTDBG
+RPG preprocessor options..*LVL2
+Listing option............*PRINT
+Target release............V7R5M0
+INCLUDE file..............*LIBL/QRPGLESRC
+Commit....................*NONE
+Allow copy of data........*OPTIMIZE
+Close SQL cursor..........*ENDACTGRP
+Allow blocking............*ALLREAD
+Delay PREPARE.............*NO
+Concurrent access
+  resolution..............*DFT
+Generation level..........10
+Printer file..............*LIBL/QSYSPRT
+Date format...............*JOB
+Date separator............*JOB
+Time format...............*HMS
+Time separator ...........*JOB
+Replace...................*YES
+Relational database.......*LOCAL
+User .....................*CURRENT
+RDB connect method........*DUW
+Default collection........*NONE
+Dynamic default
+  collection..............*NO
+Package name..............*OBJLIB/*OBJ
+Path......................*NAMING
+SQL rules.................*DB2
+Created object type.......*PGM
+Debugging view............*SOURCE
+Debugging encryption key..*NONE
+User profile .............*USER
+Dynamic user profile......*USER
+Sort sequence.............*JOB
+Language ID...............*JOB
+IBM SQL flagging..........*NOFLAG
+ANS flagging..............*NONE
+Text......................
+Source file CCSID.........37
+Job CCSID.................65535
+Decimal result options:
+  Maximum precision.......31
+  Maximum scale...........31
+  Minimum divide scale....0
+DECFLOAT rounding mode....*HALFEVEN
+Compiler options..........TGTCCSID(*JOB) OPTIMIZE() INCDIR(*NONE)
+Source member changed on 02/18/26  07:20:08
+5770ST1 V7R5M0 220415            Create SQL ILE RPG Object         SECTION                     02/18/26 07:20:08          Page     2
+Record  *...+... 1 ...+... 2 ...+... 3 ...+... 4 ...+... 5 ...+... 6 ...+... 7 ...+... 8 ...+... 9 ...+... 0   SEQNBR  Last change
+    1   **free                                                                                                 000001   02/18/26
+    2        // commented out                                                                                  000002   02/18/26
+    3        // comment from tobi in inventory                                                                 000003   02/18/26
+    4         // comment from tobi in inventory                                                                000004   02/18/26
+    5                                                                                                          000005   02/18/26
+    6        *inlr = *on;                                                                                      000006   02/18/26
+                                * * * * *  E N D  O F  S O U R C E  * * * * *
+5770ST1 V7R5M0 220415            Create SQL ILE RPG Object         SECTION                     02/18/26 07:20:08          Page     3
+                                               CROSS REFERENCE
+Data Names                    Define    Reference
+5770ST1 V7R5M0 220415            Create SQL ILE RPG Object         SECTION                     02/18/26 07:20:08          Page     4
+                                             DIAGNOSTIC MESSAGES
+MSG ID  SEV  RECORD  TEXT
+SQL0053  10          No SQL statements found.
+                    Message Summary
+  Total     Info   Warning      Error   Severe  Terminal
+      1        0         1          0        0         0
+10 level severity errors found in source
+    6 Source records processed
+                               * * * * *  E N D  O F  L I S T I N G  * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      1
+  Command  . . . . . . . . . . . . :   CRTBNDRPG
+    Issued by  . . . . . . . . . . :     KHUSHI
+  Program  . . . . . . . . . . . . :   SECTION
+    Library  . . . . . . . . . . . :     KHUSHI
+  Text 'description' . . . . . . . :
+  Source stream file   . . . . . . :   /QSYS.LIB/QTEMP.LIB/QSQLTEMP1.FILE/SECTION.MBR
+    CCSID  . . . . . . . . . . . . :     37
+  Target CCSID . . . . . . . . . . :   *JOB (37)
+  Text 'description' . . . . . . . :
+  Last Change  . . . . . . . . . . :   02/18/26  07:20:08
+  Generation severity level  . . . :   10
+  Default activation group . . . . :   *YES
+  Compiler options . . . . . . . . :   *XREF      *GEN       *NOSECLVL  *SHOWCPY
+                                       *EXPDDS    *EXT       *NOSHOWSKP *NOSRCSTMT
+                                       *DEBUGIO   *UNREF     *EVENTF
+  Debugging views  . . . . . . . . :   *ALL
+  Debug encryption key . . . . . . :   *NONE
+  Output . . . . . . . . . . . . . :   *PRINT
+  Optimization level . . . . . . . :   *NONE
+  Source listing indentation . . . :   *NONE
+  Type conversion options  . . . . :   *NONE
+  Sort sequence  . . . . . . . . . :   *JOB
+  Language identifier  . . . . . . :   *JOB
+  Replace program  . . . . . . . . :   *YES
+  User profile . . . . . . . . . . :   *USER
+  Authority  . . . . . . . . . . . :   *LIBCRTAUT
+  Truncate numeric . . . . . . . . :   *YES
+  Fix numeric  . . . . . . . . . . :   *NONE
+  Target release . . . . . . . . . :   V7R5M0
+  Allow null values  . . . . . . . :   *NO
+  Define condition names . . . . . :   *NONE
+  Enable performance collection  . :   *PEP
+  Profiling data . . . . . . . . . :   *NOCOL
+  Licensed Internal Code options . :
+  Generate program interface . . . :   *NO
+  Include directory  . . . . . . . :
+  Preprocessor options . . . . . . :   *NONE
+  Require prototype for export . . :   *NO
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      2
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+                          S o u r c e   L i s t i n g
+     1 **free                                                                                                               000001
+     2      // commented out                                                                                                000002
+     3      // comment from tobi in inventory                                                                               000003
+     4       // comment from tobi in inventory                                                                              000004
+     5                                                                                                                      000005
+     6        /SET CCSID(*CHAR:*JOBRUNMIX)                                                                                  000006
+     7        // SQL COMMUNICATION AREA                                                //SQL                                000007
+     8        DCL-DS SQLCA;                                                            //SQL                                000008
+     9          SQLCAID CHAR(8) INZ(X'0000000000000000');                              //SQL                                000009
+    10           SQLAID CHAR(8) OVERLAY(SQLCAID);                                      //SQL                                000010
+    11          SQLCABC INT(10);                                                       //SQL                                000011
+    12           SQLABC BINDEC(9) OVERLAY(SQLCABC);                                    //SQL                                000012
+    13          SQLCODE INT(10);                                                       //SQL                                000013
+    14           SQLCOD BINDEC(9) OVERLAY(SQLCODE);                                    //SQL                                000014
+    15          SQLERRML INT(5);                                                       //SQL                                000015
+    16           SQLERL BINDEC(4) OVERLAY(SQLERRML);                                   //SQL                                000016
+    17          SQLERRMC CHAR(70);                                                     //SQL                                000017
+    18           SQLERM CHAR(70) OVERLAY(SQLERRMC);                                    //SQL                                000018
+    19          SQLERRP CHAR(8);                                                       //SQL                                000019
+    20           SQLERP CHAR(8) OVERLAY(SQLERRP);                                      //SQL                                000020
+    21          SQLERR CHAR(24);                                                       //SQL                                000021
+    22           SQLER1 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000022
+    23           SQLER2 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000023
+    24           SQLER3 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000024
+    25           SQLER4 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000025
+    26           SQLER5 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000026
+    27           SQLER6 BINDEC(9) OVERLAY(SQLERR:*NEXT);                               //SQL                                000027
+    28           SQLERRD INT(10) DIM(6) OVERLAY(SQLERR);                               //SQL                                000028
+    29          SQLWRN CHAR(11);                                                       //SQL                                000029
+    30           SQLWN0 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000030
+    31           SQLWN1 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000031
+    32           SQLWN2 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000032
+    33           SQLWN3 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000033
+    34           SQLWN4 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000034
+    35           SQLWN5 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000035
+    36           SQLWN6 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000036
+    37           SQLWN7 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000037
+    38           SQLWN8 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000038
+    39           SQLWN9 CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000039
+    40           SQLWNA CHAR(1) OVERLAY(SQLWRN:*NEXT);                                 //SQL                                000040
+    41           SQLWARN CHAR(1) DIM(11) OVERLAY(SQLWRN);                              //SQL                                000041
+    42          SQLSTATE CHAR(5);                                                      //SQL                                000042
+    43           SQLSTT CHAR(5) OVERLAY(SQLSTATE);                                     //SQL                                000043
+    44        END-DS SQLCA;                                                            //SQL                                000044
+    45        DCL-PR SQLROUTE_CALL EXTPGM(SQLROUTE);                                   //SQL                                000045
+    46          CA LIKEDS(SQLCA);                                                      //SQL                                000046
+    47          *N BINDEC(4) OPTIONS(*NOPASS);                                         //SQL                                000047
+    48          *N CHAR(1) OPTIONS(*NOPASS);                                           //SQL                                000048
+    49        END-PR SQLROUTE_CALL;                                                    //SQL                                000049
+    50        DCL-PR SQLOPEN_CALL EXTPGM(SQLOPEN);                                     //SQL                                000050
+    51          CA LIKEDS(SQLCA);                                                      //SQL                                000051
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      3
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+    52          *N BINDEC(4);                                                          //SQL                                000052
+    53        END-PR SQLOPEN_CALL;                                                     //SQL                                000053
+    54        DCL-PR SQLCLSE_CALL EXTPGM(SQLCLSE);                                     //SQL                                000054
+    55          CA LIKEDS(SQLCA);                                                      //SQL                                000055
+    56          *N BINDEC(4);                                                          //SQL                                000056
+    57        END-PR SQLCLSE_CALL;                                                     //SQL                                000057
+    58        DCL-PR SQLCMIT_CALL EXTPGM(SQLCMIT);                                     //SQL                                000058
+    59          CA LIKEDS(SQLCA);                                                      //SQL                                000059
+    60          *N BINDEC(4);                                                          //SQL                                000060
+    61        END-PR SQLCMIT_CALL;                                                     //SQL                                000061
+    62        /RESTORE CCSID(*CHAR)                                                                                         000062
+    63        DCL-C SQLROUTE CONST('QSYS/QSQROUTE');                                   //SQL                                000063
+    64        DCL-C SQLOPEN CONST('QSYS/QSQROUTE');                                    //SQL                                000064
+    65        DCL-C SQLCLSE CONST('QSYS/QSQLCLSE');                                    //SQL                                000065
+    66        DCL-C SQLCMIT CONST('QSYS/QSQLCMIT');                                    //SQL                                000066
+    67        DCL-C SQFRD CONST(2);                                                    //SQL                                000067
+    68        DCL-C SQFCRT CONST(8);                                                   //SQL                                000068
+    69        DCL-C SQFOVR CONST(16);                                                  //SQL                                000069
+    70        DCL-C SQFAPP CONST(32);                                                  //SQL                                000070
+    71      *inlr = *on;                                                                                                    000071
+       * * * * *   E N D   O F   S O U R C E   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      4
+          A d d i t i o n a l   D i a g n o s t i c   M e s s a g e s
+ Msg id  Sv Number Seq     Message text
+ * * * * *   E N D   O F   A D D I T I O N A L   D I A G N O S T I C   M E S S A G E S   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      5
+                          C r o s s   R e f e r e n c e
+      File and Record References:
+         File              Device             References (D=Defined)
+           Record
+         No references in the source.
+      Global Field References:
+         Field             Attributes         References (D=Defined M=Modified)
+         *INLR             N(1)                   71M
+*RNF7031 SQFAPP            CONST                  70D
+*RNF7031 SQFCRT            CONST                  68D
+*RNF7031 SQFOVR            CONST                  69D
+*RNF7031 SQFRD             CONST                  67D
+*RNF7031 SQLABC            B(9,0)                 12D
+*RNF7031 SQLAID            A(8)                   10D
+                           CCSID(JOBRUNMIX)
+         SQLCA             DS(136)                 8D     46      51      55
+                           CCSID(JOBRUNMIX)       59
+         SQLCABC           I(10,0)                11D     12
+         SQLCAID           A(8)                    9D     10
+                           CCSID(JOBRUNMIX)
+         SQLCLSE           CONST                  54      65D
+*RNF7031 SQLCLSE_CALL      PROTOTYPE              54D
+         SQLCMIT           CONST                  58      66D
+*RNF7031 SQLCMIT_CALL      PROTOTYPE              58D
+*RNF7031 SQLCOD            B(9,0)                 14D
+         SQLCODE           I(10,0)                13D     14
+*RNF7031 SQLERL            B(4,0)                 16D
+*RNF7031 SQLERM            A(70)                  18D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLERP            A(8)                   20D
+                           CCSID(JOBRUNMIX)
+         SQLERR            A(24)                  21D     22      23      24
+                           CCSID(JOBRUNMIX)       25      26      27      28
+*RNF7031 SQLERRD(6)        I(10,0)                28D
+         SQLERRMC          A(70)                  17D     18
+                           CCSID(JOBRUNMIX)
+         SQLERRML          I(5,0)                 15D     16
+         SQLERRP           A(8)                   19D     20
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLER1            B(9,0)                 22D
+*RNF7031 SQLER2            B(9,0)                 23D
+*RNF7031 SQLER3            B(9,0)                 24D
+*RNF7031 SQLER4            B(9,0)                 25D
+*RNF7031 SQLER5            B(9,0)                 26D
+*RNF7031 SQLER6            B(9,0)                 27D
+         SQLOPEN           CONST                  50      64D
+*RNF7031 SQLOPEN_CALL      PROTOTYPE              50D
+         SQLROUTE          CONST                  45      63D
+*RNF7031 SQLROUTE_CALL     PROTOTYPE              45D
+         SQLSTATE          A(5)                   42D     43
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLSTT            A(5)                   43D
+                           CCSID(JOBRUNMIX)
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      6
+*RNF7031 SQLWARN(11)       A(1)                   41D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWNA            A(1)                   40D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN0            A(1)                   30D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN1            A(1)                   31D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN2            A(1)                   32D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN3            A(1)                   33D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN4            A(1)                   34D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN5            A(1)                   35D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN6            A(1)                   36D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN7            A(1)                   37D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN8            A(1)                   38D
+                           CCSID(JOBRUNMIX)
+*RNF7031 SQLWN9            A(1)                   39D
+                           CCSID(JOBRUNMIX)
+         SQLWRN            A(11)                  29D     30      31      32
+                           CCSID(JOBRUNMIX)       33      34      35      36
+                                                  37      38      39      40
+                                                  41
+      Indicator References:
+         Indicator                            References (D=Defined M=Modified)
+         LR                                       71M
+       * * * * *   E N D   O F   C R O S S   R E F E R E N C E   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      7
+                      E x t e r n a l   R e f e r e n c e s
+      Statically bound procedures:
+         Procedure                            References
+         No references in the source.
+      Imported fields:
+         Field             Attributes         Defined
+         No references in the source.
+      Exported fields:
+         Field             Attributes         Defined
+         No references in the source.
+   * * * * *   E N D   O F   E X T E R N A L   R E F E R E N C E S   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      8
+                          M e s s a g e   S u m m a r y
+ Msg id  Sv Number Message text
+*RNF7031 00     34 The name or indicator is not referenced.
+       * * * * *   E N D   O F   M E S S A G E   S U M M A R Y   * * * * *
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             KHUSHI/SECTION           P1289XPV   02/18/26 07:20:08        Page      9
+                            F i n a l   S u m m a r y
+  Message Totals:
+    Information  (00) . . . . . . . :       34
+    Warning      (10) . . . . . . . :        0
+    Error        (20) . . . . . . . :        0
+    Severe Error (30+)  . . . . . . :        0
+    ---------------------------------  -------
+    Total . . . . . . . . . . . . . :       34
+  Source Totals:
+    Records . . . . . . . . . . . . :       71
+    Specifications  . . . . . . . . :       63
+    Data records  . . . . . . . . . :        0
+    Comments  . . . . . . . . . . . :        5
+         * * * * *   E N D   O F   F I N A L   S U M M A R Y   * * * * *
+Program SECTION placed in library KHUSHI. 00 highest severity. Created on 02/18/26 at 07:20:08.
+          * * * * *   E N D   O F   C O M P I L A T I O N   * * * * *
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+

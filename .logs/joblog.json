@@ -1,13 +1,13 @@
 [
     {
-        "cmd": "DLTOBJ OBJ(KHUSHI/TEST1BND1) OBJTYPE(*BNDDIR)",
-        "cmd_time": "2026-02-17-10.27.53.00",
+        "cmd": "CRTSQLRPGI srcstmf('/home/KHUSHI/multilib/accounts/qrpglesrc/SECTION.SQLRPGLE') OBJ(KHUSHI/SECTION) COMMIT(*NONE) OBJTYPE(*PGM) OPTION(*EVENTF) OUTPUT(*PRINT) TEXT('') TGTRLS() DBGVIEW(*SOURCE) DBGENCKEY(*NONE) USRPRF(*USER) RPGPPOPT(*LVL2) COMPILEOPT('TGTCCSID(*JOB) OPTIMIZE() INCDIR(*NONE)')",
+        "cmd_time": "2026-02-18-07.27.49.00",
         "msgs": [
             {
                 "msgid": "CPC2198",
                 "type": "COMPLETION",
                 "severity": 0,
-                "message_time": "2026-02-17-10.27.53.287860",
+                "message_time": "2026-02-18-07.27.49.140717",
                 "message_text": "Current library changed to KHUSHI.",
                 "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
                 "from_program": "QLICHLLE",
@@ -20,87 +20,9 @@
                 "to_instruction": "4"
             }
         ],
-        "object": "TEST1BND1.BNDDIR",
-        "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/TEST1BND1.BNDDIR",
-        "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_TEST1BND1_BNDDIR.splf",
-        "failed": true
-    },
-    {
-        "cmd": "CRTBNDDIR BNDDIR(KHUSHI/TEST1BND1)",
-        "cmd_time": "2026-02-17-10.27.54.00",
-        "msgs": [
-            {
-                "msgid": "CPC2198",
-                "type": "COMPLETION",
-                "severity": 0,
-                "message_time": "2026-02-17-10.27.54.242548",
-                "message_text": "Current library changed to KHUSHI.",
-                "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
-                "from_program": "QLICHLLE",
-                "from_library": "QSYS",
-                "from_instruction": "01A3",
-                "to_program": "QP2USER2",
-                "to_library": "QSYS",
-                "to_module": "QP2API",
-                "to_procedure": "runpase_common__FiPvT2",
-                "to_instruction": "4"
-            }
-        ],
-        "object": "TEST1BND1.BNDDIR",
-        "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/TEST1BND1.BNDDIR",
-        "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_TEST1BND1_BNDDIR.splf",
-        "failed": false
-    },
-    {
-        "cmd": " ADDBNDDIRE BNDDIR(KHUSHI/TEST1BND1) OBJ((*LIBL/TEST1MOD1 *MODULE) )",
-        "cmd_time": "2026-02-17-10.27.55.00",
-        "msgs": [
-            {
-                "msgid": "CPC2198",
-                "type": "COMPLETION",
-                "severity": 0,
-                "message_time": "2026-02-17-10.27.55.354302",
-                "message_text": "Current library changed to KHUSHI.",
-                "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
-                "from_program": "QLICHLLE",
-                "from_library": "QSYS",
-                "from_instruction": "01A3",
-                "to_program": "QP2USER2",
-                "to_library": "QSYS",
-                "to_module": "QP2API",
-                "to_procedure": "runpase_common__FiPvT2",
-                "to_instruction": "4"
-            }
-        ],
-        "object": "TEST1BND1.BNDDIR",
-        "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/TEST1BND1.BNDDIR",
-        "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_TEST1BND1_BNDDIR.splf",
-        "failed": false
-    },
-    {
-        "cmd": "CRTBNDRPG srcstmf('/home/KHUSHI/multilib/accounts/qrpglesrc/test1pgm1.rpgle') PGM(KHUSHI/TEST1PGM1) TGTCCSID(*JOB) DBGVIEW(*ALL) DBGENCKEY(*NONE) USRPRF(*USER) OPTION(*EVENTF) TEXT('') TGTRLS() INCDIR(*NONE)",
-        "cmd_time": "2026-02-17-10.27.56.00",
-        "msgs": [
-            {
-                "msgid": "CPC2198",
-                "type": "COMPLETION",
-                "severity": 0,
-                "message_time": "2026-02-17-10.27.56.202533",
-                "message_text": "Current library changed to KHUSHI.",
-                "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
-                "from_program": "QLICHLLE",
-                "from_library": "QSYS",
-                "from_instruction": "01A3",
-                "to_program": "QP2USER2",
-                "to_library": "QSYS",
-                "to_module": "QP2API",
-                "to_procedure": "runpase_common__FiPvT2",
-                "to_instruction": "4"
-            }
-        ],
-        "object": "TEST1PGM1.PGM",
-        "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/test1pgm1.rpgle",
-        "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_TEST1PGM1_PGM.splf",
+        "object": "SECTION.PGM",
+        "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/SECTION.SQLRPGLE",
+        "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_SECTION_PGM.splf",
         "failed": false
     }
 ]

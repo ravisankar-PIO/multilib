@@ -1,5 +1,5 @@
 # Check out the documentation on creating the rules at https://ibm.github.io/ibmi-tobi/#/prepare-the-project/rules.mk
-SUBDIRS := ACCOUNTS
+SUBDIRS := INVENTORY ACCOUNTS
 
 # =============================================================================
 # VARIABLES

@@ -1,0 +1,6 @@
+# SQL RPGLE Source build rules
+
+SECTION.PGM: SECTION.SQLRPGLE
+
+# Add dependencies if SECTION uses database files, e.g.:
+# SECTION.MODULE: SECTION.SQLRPGLE CUSTOMERS.FILE ORDERS.FILE
