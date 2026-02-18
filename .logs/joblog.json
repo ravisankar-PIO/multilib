@@ -1,13 +1,13 @@
 [
     {
         "cmd": "CRTSQLRPGI srcstmf('/home/KHUSHI/multilib/accounts/qrpglesrc/SECTION.SQLRPGLE') OBJ(KHUSHI/SECTION) COMMIT(*NONE) OBJTYPE(*PGM) OPTION(*EVENTF) OUTPUT(*PRINT) TEXT('') TGTRLS() DBGVIEW(*SOURCE) DBGENCKEY(*NONE) USRPRF(*USER) RPGPPOPT(*LVL2) COMPILEOPT('TGTCCSID(*JOB) OPTIMIZE() INCDIR(*NONE)')",
-        "cmd_time": "2026-02-18-07.27.49.00",
+        "cmd_time": "2026-02-18-07.34.17.00",
         "msgs": [
             {
                 "msgid": "CPC2198",
                 "type": "COMPLETION",
                 "severity": 0,
-                "message_time": "2026-02-18-07.27.49.140717",
+                "message_time": "2026-02-18-07.34.17.548000",
                 "message_text": "Current library changed to KHUSHI.",
                 "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
                 "from_program": "QLICHLLE",
@@ -23,6 +23,32 @@
         "object": "SECTION.PGM",
         "source": "/home/KHUSHI/multilib/accounts/qrpglesrc/SECTION.SQLRPGLE",
         "output": "/home/KHUSHI/multilib/.logs/accounts_qrpglesrc_SECTION_PGM.splf",
+        "failed": false
+    },
+    {
+        "cmd": "CRTBNDRPG srcstmf('/home/KHUSHI/multilib/inventory/qrpglesrc/NEWMBR1.RPGLE') PGM(KHUSHI/NEWMBR1) TGTCCSID(*JOB) DBGVIEW(*ALL) DBGENCKEY(*NONE) USRPRF(*USER) OPTION(*EVENTF) TEXT('') TGTRLS() INCDIR(*NONE)",
+        "cmd_time": "2026-02-18-07.34.18.00",
+        "msgs": [
+            {
+                "msgid": "CPC2198",
+                "type": "COMPLETION",
+                "severity": 0,
+                "message_time": "2026-02-18-07.34.18.792936",
+                "message_text": "Current library changed to KHUSHI.",
+                "second_level": "&N Cause . . . . . :   The current library in the library list was changed to KHUSHI.",
+                "from_program": "QLICHLLE",
+                "from_library": "QSYS",
+                "from_instruction": "01A3",
+                "to_program": "QP2USER2",
+                "to_library": "QSYS",
+                "to_module": "QP2API",
+                "to_procedure": "runpase_common__FiPvT2",
+                "to_instruction": "4"
+            }
+        ],
+        "object": "NEWMBR1.PGM",
+        "source": "/home/KHUSHI/multilib/inventory/qrpglesrc/NEWMBR1.RPGLE",
+        "output": "/home/KHUSHI/multilib/.logs/inventory_qrpglesrc_NEWMBR1_PGM.splf",
         "failed": false
     }
 ]
