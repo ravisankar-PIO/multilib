@@ -1,4 +1,3 @@
-**freedf
-//comented
-
-
+**free
+*inlr = *on;
+return;

@@ -1,0 +1,1 @@
+{"object_library":"CMPSYS    ","object_name":"CALC","object_type":"*PGM","object_attribute":"RPGLE","object_text":" ","source_library":"RAVI","source_file":"QRPGLESRC","source_member":"CALC","source_member_type":"RPGLE","compilation_method":"CRTBNDRPG","compile_parameters":["PGM(CMPSYS/CALC)","SRCFILE(RAVI/QRPGLESRC)","SRCMBR(CALC)","REPLACE(*YES)","TGTRLS(V7R4M0)"]}
