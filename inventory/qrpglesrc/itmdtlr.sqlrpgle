@@ -1,17 +1,15 @@
 **free
 // -------------------------------------------------------------------------------------------------
-// Program Name : ITMDTLR  (edited)
+// Program Name : ITMDTLR
 // Description  : Program to Add/Delete/Update/Display the Item Master file records.
 // Parameters   : S2_Mode            Input    Mandatory. Determines if the mode is Add/Delete/Update
 //                S2_ItNum           Input    Mandatory. Blanks for Add operation.
 //                S2_Operation_Flag  Output   Determines if the operation completed successfully.
 //                S2_Exit_Flag       Output   Determines whether user canceled the operation.
-// Written By   : Ravisankar P (edited)
+// Written By   : Ravisankar Pandian
 // Company.     : Programmers.IO
 // Date         : 19-07-2023
-// new line added
-// --------------------------
-
+// -------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------
 // Definition of program control statements.
@@ -170,15 +168,15 @@ dcl-proc process_detail;
         S2_exit_flag = TRUE;
 
       else;
-        exec sql
-          call itmdtl(:D_ITNUM, :D_ITDESC, :D_ITQTY, D_ITPRICE,
+        exec sql 
+          call itmdtl(:D_ITNUM, :D_ITDESC, :D_ITQTY, D_ITPRICE, 
           :PgmDs.UserName, PgmDs.PgmName, :mode, S2_operation_flag);
-
+        
       endif;
 
     other;
-    exec sql
-      call itmdtl(:D_ITNUM, :D_ITDESC, :D_ITQTY, D_ITPRICE,
+    exec sql 
+      call itmdtl(:D_ITNUM, :D_ITDESC, :D_ITQTY, D_ITPRICE, 
       :PgmDs.UserName, PgmDs.PgmName, :mode, S2_operation_flag);
 
     endsl;
@@ -222,7 +220,7 @@ dcl-proc move_fields;
       endif;
 
     when S2_mode = 'Update';
-    Mode = 2;
+    Mode = 2; 
       D_ITNUM    = S2_Itnum;
 
     when S2_mode = 'Delete';

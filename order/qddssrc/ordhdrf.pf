@@ -1,0 +1,17 @@
+     A*----------------------------------------------------------
+     A*               ORDER Header FILE
+     A*
+     A*   Name......: ORDDTLF
+     A*   Purpose...: Order Header Table
+     A*   Notes.....: This table contains high level order related info such as
+     A*               Order Number, Customer Number, Total Order Amount, & Date
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+                R ORDHDRR
+                  HORDNO         5  0       COLHDG('Order Number')
+                  HCUSNO         5  0       COLHDG('Customer Number')
+                  HORDAMT       15  2       COLHDG('Order Amount')
+                  HORDDATE        L         COLHDG('Order Date')
+                K HORDNO

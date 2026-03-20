@@ -1,7 +1,7 @@
 **free
 // -------------------------------------------------------------------------------------------------
 // Program Name : ITMMASTR
-// Description  : A program to Maintain the Item Master file records.
+// Description  : Program to Maintain the Item Master file records.
 // Parameters   : None.
 // Written By   : Ravisankar Pandian
 // Company.     : Programmers.IO
@@ -52,35 +52,35 @@ dcl-s array_counter packed(7) inz;
 // -------------------------------------------------------------------------------------------------
 // Definition of Data Structures
 // -------------------------------------------------------------------------------------------------
-  dcl-s p_Indicators pointer inz(%addr(*in));
-  dcl-ds subfile qualified based(p_Indicators);
-    exit        ind pos(03);
-    refresh     ind pos(05);
-    addIt       ind pos(06);
-    cancel      ind pos(12);
-    pageup      ind pos(25);
-    pagedown    ind pos(26);
-    dsp         ind pos(31);
-    ctl         ind pos(32);
-    clr         ind pos(33);
-    isEnd       ind pos(34);
-    option_RI   ind pos(61);
-    posto_RI    ind pos(62);
-    search_RI   ind pos(63);
-    nextchange  ind pos(67);
-  end-ds;
+dcl-s p_Indicators pointer inz(%addr(*in));
+dcl-ds subfile qualified based(p_Indicators);
+  exit        ind pos(03);
+  refresh     ind pos(05);
+  addIt       ind pos(06);
+  cancel      ind pos(12);
+  pageup      ind pos(25);
+  pagedown    ind pos(26);
+  dsp         ind pos(31);
+  ctl         ind pos(32);
+  clr         ind pos(33);
+  isEnd       ind pos(34);
+  option_RI   ind pos(61);
+  posto_RI    ind pos(62);
+  search_RI   ind pos(63);
+  nextchange  ind pos(67);
+end-ds;
 
-  dcl-ds PgmDs psds qualified;
-    PgmName *proc;
-  end-ds;
+dcl-ds PgmDs psds qualified;
+  PgmName *proc;
+end-ds;
 
 
 // -------------------------------------------------------------------------------------------------
 // Definition of Global Constants
 // -------------------------------------------------------------------------------------------------
-  dcl-c TRUE const('1');
-  dcl-c FALSE const('0');
-  dcl-c PageSize const(5);
+dcl-c TRUE const('1');
+dcl-c FALSE const('0');
+dcl-c PageSize const(5);
 
 
 
@@ -90,25 +90,25 @@ dcl-s array_counter packed(7) inz;
 *inlr = TRUE;
 S_PGMNAM = PgmDs.PgmName;
 // Initialize, load and display the Maintenance screen for the first time.
-  Initialize();
+Initialize();
 
 
-  dow subfile.exit = FALSE; // Exit the loop if the user takes F3=Exit.
+dow subfile.exit = FALSE; // Exit the loop if the user takes F3=Exit.
 
-     checkFKey(); // Check any other F-Key is pressed.
+  checkFKey(); // Check any other F-Key is pressed.
 
 
-    if validate_sf() = TRUE; // Validate the user entered options.
-      process_sf(); // and process it.
-    endif;
+  if validate_sf() = TRUE; // Validate the user entered options.
+    process_sf(); // and process it.
+  endif;
 
-    if refreshFlag = TRUE; // If the record is updated, then force a refresh
-      refreshFlag = FALSE;
-      refresh();
-    endif;
-    Display_sf(); // Display the subfile and continue with the loop.
+  if refreshFlag = TRUE; // If the record is updated, then force a refresh
+    refreshFlag = FALSE;
+    refresh();
+  endif;
+  Display_sf(); // Display the subfile and continue with the loop.
 
-  enddo;
+enddo;
 
 
 return;

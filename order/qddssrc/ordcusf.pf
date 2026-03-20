@@ -1,0 +1,16 @@
+     A*----------------------------------------------------------
+     A*               CUSTOMER MASTER FILE
+     A*
+     A*   Name......: ORDCUSF
+     A*   Purpose...: Customer Master Table
+     A*   Notes.....: The Customer Number is unique and will be auto incremented (in program)
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+     A                                      UNIQUE
+     A          R ORDCUSR
+     A            CUSNUM         5S 0
+     A            CUSNAM        30A
+     A            CUSCITY       30A
+     A          K CUSNUM

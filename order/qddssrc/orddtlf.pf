@@ -1,0 +1,19 @@
+     A*----------------------------------------------------------
+     A*               ORDER DETAIL FILE
+     A*
+     A*   Name......: ORDDTLF
+     A*   Purpose...: Order Detail Table
+     A*   Notes.....: This table contains detailed order related info such as
+     A*               Line Totals, Item Quantity etc.
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+                R ORDDTLR
+                  DORDNO         5  0       COLHDG('Order Number')
+                  DCUSNO         5  0       COLHDG('Customer Number')
+                  DLINNO         3  0       COLHDG('Line Number')
+                  DITMNO         5  0       COLHDG('Item Number')
+                  DITMQTY        5  0       COLHDG('Item Quantity')
+                  DLINTOT       15  2       COLHDG('Line Total')
+                K DORDNO

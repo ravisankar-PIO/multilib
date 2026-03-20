@@ -1,0 +1,129 @@
+     A*----------------------------------------------------------
+     A*               PRINT ORDER REPORT DESIGN
+     A*
+     A*   File......: ORDREPORTP
+     A*   Purpose...: A Simple report design for customer order reports.
+     A*   Notes.....: User can either generate report for a given customer or
+     A*               for all customers (if the customer# field is empty)
+     A*   Written By: Ravisankar Pandian
+     A*   Company...: Programmers.IO
+     A*   Date......: 19-07-2023
+     A*----------------------------------------------------------
+     A          R TITLE
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%***********************************************************************
+     A                                    60
+     A                                      'Order details Report'
+     A                                   105
+     A                                      ' Date :'
+     A            RDATE         10A  O   123
+     A                                     3
+     A                                      'Date Range - From:'
+     A                                      SPACEB(004)
+     A            RFROM         10A  O    23
+     A                                    18
+     A                                      'To:'
+     A                                      SPACEB(001)
+     A            RTO           10A  O    23
+     A*%%***********************************************************************
+     A*%%SS
+     A*%%CL 004
+     A*%%CL 001
+     A*%%***********************************************************************
+     A          R HEADER
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%FS 003
+     A*%%***********************************************************************
+     A                                      SPACEB(004)
+     A                                     2
+     A                                      'Ord No'
+     A                                    11
+     A                                      'Ord Line'
+     A                                    22
+     A                                      'Cust No  '
+     A                                    33
+     A                                      'Cust Name  '
+     A                                    57
+     A                                      'Item No  '
+     A                                    +4
+     A                                      'Item Description  '
+     A                                    +4
+     A                                      'Item Qty  '
+     A                                    +4
+     A                                      ' Price '
+     A                                    +4
+     A                                      'Line Total'
+     A                                     1
+     A                                      '-----------------------------------
+     A                                      ------------------------------------
+     A                                      ------------------------------------
+     A                                      ----------------------------'
+     A                                      SPACEB(001)
+     A*%%***********************************************************************
+     A*%%SS
+     A*%%CL 001
+     A*%%***********************************************************************
+     A          R DETAIL
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%***********************************************************************
+     A                                      SPACEB(001)
+     A            RORDNO    R        O     1
+     A                                      REFFLD(ORDDTLR/DORDNO RAVISANKAR/OR-
+     A                                      DDTLF)
+     A            RLINNO    R        O     8
+     A                                      REFFLD(ORDDTLR/DLINNO RAVISANKAR/OR-
+     A                                      DDTLF)
+     A            RCUSNO    R        O    17
+     A                                      REFFLD(ORDDTLR/DCUSNO RAVISANKAR/OR-
+     A                                      DDTLF)
+     A            RCUSNAM   R        O    +5
+     A                                      REFFLD(ORDCUSR/CUSNAM RAVISANKAR/OR-
+     A                                      DCUSF)
+     A            RITNUM    R        O    59
+     A                                      REFFLD(ORDDTLR/DITMNO RAVISANKAR/OR-
+     A                                      DDTLF)
+     A            RITDESC   R        O    68
+     A                                      REFFLD(ITMMASTR/ITDESC RAVISANKAR/I-
+     A                                      TMMASTF)
+     A
+     A            RITQTY    R        O   100
+     A                                      REFFLD(ORDDTLR/DITMQTY RAVISANKAR/O-
+     A                                      RDDTLF)
+     A
+     A            RITPRICE  R        O   111
+     A                                      REFFLD(ITMMASTR/ITPRICE RAVISANKAR/-
+     A                                      ITMMASTF)
+     A
+     A            RLINTOT   R        O   117
+     A                                      REFFLD(ORDDTLR/DLINTOT RAVISANKAR/O-
+     A                                      RDDTLF)
+     A
+     A**                                      EDTCDE(3)
+     A*%%***********************************************************************
+     A*%%SS
+     A*%%***********************************************************************
+     A          R FOOTER
+     A*%%***********************************************************************
+     A*%%RI 00000
+     A*%%***********************************************************************
+     A                                      SPACEB(001)
+     A                                     1
+     A                                      '==================================-
+     A                                      ===================================-
+     A                                      ===================================-
+     A                                      ============================'
+     A                                     1
+     A                                      'Order Total'
+     A                                      SPACEB(001)
+     A            C_TOTAL       20S 2O   112
+     A                                      EDTCDE(3)
+     A                                     1
+     A                                      '==================================-
+     A                                      ===================================-
+     A                                      ===================================-
+     A                                      ============================'
+     A                                      SPACEB(001)
+
